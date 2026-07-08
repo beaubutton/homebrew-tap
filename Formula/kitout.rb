@@ -1,15 +1,15 @@
 class Kitout < Formula
   desc "The agent-era workstation bootstrapper — declarative, DAG-executed machine setup"
   homepage "https://github.com/beaubutton/kitout"
-  version "0.1.3"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/beaubutton/kitout/releases/download/v0.1.3/kitout-aarch64-apple-darwin.tar.xz"
-      sha256 "04bfc513ed13369800c55a9cc466b0c3cab4293cb948aa5e23a0f4f2cac4e584"
+      url "https://github.com/beaubutton/kitout/releases/download/v0.2.0/kitout-aarch64-apple-darwin.tar.xz"
+      sha256 "00d46fae004a3aabe37262f70a828517f7d7ebac64585bd8832e5f251839da71"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/beaubutton/kitout/releases/download/v0.1.3/kitout-x86_64-apple-darwin.tar.xz"
-      sha256 "a72afb64bae126b3bbf23fc0412cda284a2dc40f484432dd485aa9ccff2dc870"
+      url "https://github.com/beaubutton/kitout/releases/download/v0.2.0/kitout-x86_64-apple-darwin.tar.xz"
+      sha256 "c75e46358490503ba8efd0bae0601ce931a46a1050a1247b250e52df8c769931"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
